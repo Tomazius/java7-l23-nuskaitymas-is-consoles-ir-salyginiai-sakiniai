@@ -15,6 +15,11 @@ public class SwitchPavyzdys {
         System.out.println("Diena = " + dienaTekstuSuMasyvu(4));
         System.out.println("Diena = " + dienaTekstuSuMasyvu(7));
         System.out.println("Diena = " + dienaTekstuSuMasyvu(8));
+
+        System.out.println("pavyzdziai su masyvu2");
+        System.out.println("Diena = " + dienaTekstuSuMasyvu2(4));
+        System.out.println("Diena = " + dienaTekstuSuMasyvu2(7));
+        System.out.println("Diena = " + dienaTekstuSuMasyvu2(8));
     }
 
     /**
@@ -79,6 +84,15 @@ public class SwitchPavyzdys {
             return dienos[diena - 1];
         } else {
             return "Netinkama diena";
+        }
+    }
+    //dar kitaip su nuliniu masyvu
+    public static String dienaTekstuSuMasyvu2(int diena) {
+        final String[] dienos = {"Netinkama diena", "Pirmadienis", "Antradienis", "Trečiadienis", "Ketvirtadienis", "Penktadienis", "Šeštadienis", "Sekmadienis"};
+        if ((diena <= 7) && (diena > 0)) {
+            return dienos[diena];
+        } else {
+            return dienos[0];
         }
     }
 }

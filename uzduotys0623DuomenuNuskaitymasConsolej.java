@@ -31,7 +31,7 @@ public class uzduotys0623DuomenuNuskaitymasConsolej {
         String adresas;
 
         System.out.println("Įveskite adresą: ");
-        adresas = skaitytuvas.nextLine;
+        adresas = skaitytuvas.nextLine();
         System.out.println("adresas = " + adresas);
 
         System.out.println("Pavyzdys");
